@@ -6,7 +6,7 @@ test = matrix(c(222, 42, 23, 144),nrow=2, ncol=2)
 colnames(test) <- c("ctrl","treated")
 rownames(test) <- c("Up","Down")
 
-dfm <- melt(dat_CpG)
+dfm <- melt(test)
 
 ggplot(dfm,aes(x = X1,y = value,fill=X2)) +
   geom_bar(position="stack",width=0.8,stat="identity") +#,aes(fill=value))+
