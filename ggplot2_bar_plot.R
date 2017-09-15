@@ -27,4 +27,4 @@ ggplot(dfm,aes(x = X1,y = value,fill=X2)) +
         legend.title = element_text(colour="black", size=7),
         plot.title=element_text(size=10, face="bold", color="black")) +
  # scale_fill_hue(l=10) 
-  scale_fill_manual(values=c("red", "#FFB200","blue")) 
+  scale_fill_manual(values=c("red","blue")) 
